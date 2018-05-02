@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+      <meta charset="utf-8">
+  	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+
+
+    <%- title %>
+   
+    <a target="_blank" href="./eos">节点信息</a>
+    <br/>
+   <p>
+    	区块id<br/>
+    	<form action="./getBlock" method="get">
+    	
+    	区块id :<input name="id" value="1" type="text"><br/>
+    	
+    	<input type="submit" value="提交">
+    	</form>
+    <p>
+    <br/>
+     <p>
+    	创建账户<br/>
+    	<form action="./newAccount" method="get">
+    	
+    	账户名 :<input name="name" value="eosio" type="text"><br/>
+    
+    	<input type="submit" value="提交">
+    	</form>
+    <p>
+    <br/>
+    <p>
+    	转账<br/>
+    	<form action="./zhuanzhang" method="get">
+    	from :currency<br/>
+    	to :<input name="toaccount" value="eosio" type="text"><br/>
+    	金额 :<input name="num" value="1 EOS" type="text"><br/>
+    	备注 :<input name="desc" value="备注" type="text"><br/>
+    	<input type="submit" value="提交">
+    	</form>
+    <p>
+    <p>
+    	查询余额<br/>
+    	<form action="./getAccount" method="get">
+    	
+    	账户名 :<input name="id" value="eosio" type="text"><br/>
+    
+    	<input type="submit" value="提交">
+    	</form>
+    <p>
+    
+  </body>
+</html>
+
