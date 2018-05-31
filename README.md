@@ -1,17 +1,31 @@
 # eosjsapp
 基于eos实现，功能：可以创建账户，转账，查询余额
 
+# 系统环境
+- os:Ubuntu 16.04.3
+- node: v8.10.0
+- eosio:dawn-v3.0.0
+- eosjs@dawn3
+
+```
+root@iZbp1einlbe5h87nkphdr9Z:/opt/eos/def/eosio/bin# ./nodeos -v
+306995920
+```
+
+
+
 # 使用框架
 express+ejs+eosjs
 
 ##一、账户创建—>合约部署->token发行
 #1、创建钱包
+```
 root@iZbp1einlbe5h87nkphdr9Z:/opt/eos/def/eosio/bin# ./cleos wallet create
 Creating wallet: default
 Save password to use in the future to unlock this wallet.
 Without password imported keys will not be retrievable.
 "PW5KFzjPTtKMgsnLaVAHxxEyt25v9tMnvCaEnW6Z5xCo3shtoQUu8"
-
+```
 #2、生成key
 root@iZbp1einlbe5h87nkphdr9Z:/opt/eos/def/eosio/bin# ./cleos create key 
 Private key: 5K5VaX7R5HYJUBFV6vxvxwZ5VXnJJQVnqKLt4vmYZPQaqqu7hcm
